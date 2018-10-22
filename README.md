@@ -12,7 +12,7 @@ Flutter Pop up Dialog ...
 
 
 <table>
- <tr><td> <b>Playing with MainAxisAlignment</b> </td></tr>
+ <tr><td> <b>Flutter Pop up Dialog</b> </td></tr>
   </tr>    
   <tr>
     <td>
