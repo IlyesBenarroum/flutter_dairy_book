@@ -32,7 +32,7 @@ class _WarpDemoState extends State<WarpDemo> {
           child: Container(
             width: width,
             height: height,
-            color: Colors.grey,
+            color: Colors.blueGrey,
             child: Wrap(
               children: list,
               spacing: 24.0,
