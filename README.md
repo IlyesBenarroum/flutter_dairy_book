@@ -41,9 +41,11 @@ Flutter Pop up Dialog ...
   
 ## Flutter Wrap Demo
 
- <td><img src="https://user-images.githubusercontent.com/20367660/47302204-b6ed7100-d642-11e8-8eac-009f3c6d0058.gif" width=300></td>
- 
-  <td><img src="https://user-images.githubusercontent.com/20367660/47583825-6778af00-d97a-11e8-81c0-0a499f21338e.png" width=300></td>
+<tr> <td> <img src="https://user-images.githubusercontent.com/20367660/47302204-b6ed7100-d642-11e8-8eac-009f3c6d0058.gif" width=300> </td>
+ <td><img src="https://user-images.githubusercontent.com/20367660/47583825-6778af00-d97a-11e8-81c0-0a499f21338e.png" width=300>
+</td>
+</tr>
+
  
  
 
