@@ -28,14 +28,17 @@ class MainScreen extends StatelessWidget {
           context: context,
           tiles: <Widget>[
             new ListTile(
+              leading: new Icon(Icons.looks_one),
               title: const Text('Example 1 - Headers and Content'),
               onTap: () => navigateTo(context, (context) => new Example1()),
             ),
             new ListTile(
+              leading: new Icon(Icons.looks_two),
               title: const Text('Example 2 - Animated Headers with Content'),
               onTap: () => navigateTo(context, (context) => new Example2()),
             ),
             new ListTile(
+              leading: new Icon(Icons.looks_3),
               title: const Text('Example 3 - Headers overlapping the Content'),
               onTap: () => navigateTo(context, (context) => new Example3()),
             ),
@@ -96,13 +99,15 @@ class Example2 extends StatelessWidget {
               stuckAmount = 1.0 - stuckAmount.clamp(0.0, 1.0);
               return new Container(
                 height: 50.0,
-                color: Color.lerp(Colors.blue[700], Colors.red[700], stuckAmount),
+                color:
+                    Color.lerp(Colors.blue[700], Colors.red[700], stuckAmount),
                 padding: new EdgeInsets.symmetric(horizontal: 16.0),
                 alignment: Alignment.centerLeft,
                 child: new Row(
                   children: <Widget>[
                     new Expanded(
-                      child: new Text('Header #$index',
+                      child: new Text(
+                        'Header #$index',
                         style: const TextStyle(color: Colors.white),
                       ),
                     ),
@@ -112,10 +117,9 @@ class Example2 extends StatelessWidget {
                         opacity: stuckAmount,
                         child: new IconButton(
                           icon: new Icon(Icons.favorite, color: Colors.white),
-                          onPressed: () =>
-                              Scaffold.of(context).showSnackBar(
-                                  new SnackBar(content: new Text('Favorite #$index'))
-                              ),
+                          onPressed: () => Scaffold.of(context).showSnackBar(
+                              new SnackBar(
+                                  content: new Text('Favorite #$index'))),
                         ),
                       ),
                     ),
@@ -124,8 +128,8 @@ class Example2 extends StatelessWidget {
               );
             },
             content: new Container(
-              child: new Image.network(imageForIndex(index), fit: BoxFit.cover,
-                  width: double.infinity, height: 200.0),
+              child: new Image.network(imageForIndex(index),
+                  fit: BoxFit.cover, width: double.infinity, height: 200.0),
             ),
           ),
         );
@@ -155,14 +159,15 @@ class Example3 extends StatelessWidget {
                 color: Colors.grey[900].withOpacity(0.6 + stuckAmount * 0.4),
                 padding: new EdgeInsets.symmetric(horizontal: 16.0),
                 alignment: Alignment.centerLeft,
-                child: new Text('Header #$index',
+                child: new Text(
+                  'Header #$index',
                   style: const TextStyle(color: Colors.white),
                 ),
               );
             },
             content: new Container(
-              child: new Image.network(imageForIndex(index), fit: BoxFit.cover,
-                  width: double.infinity, height: 200.0),
+              child: new Image.network(imageForIndex(index),
+                  fit: BoxFit.cover, width: double.infinity, height: 200.0),
             ),
           ),
         );
@@ -179,11 +184,7 @@ class ScaffoldWrapper extends StatelessWidget {
   final Widget child;
   final String title;
 
-  const ScaffoldWrapper({
-    Key key,
-    @required this.title,
-    @required this.child,
-  }) : super(key: key);
+  const ScaffoldWrapper({Key key, this.title, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
