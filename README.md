@@ -46,6 +46,14 @@ Flutter Pop up Dialog ...
 </td>
 </tr>
 
+## Flutter BottomNavigationHangAbove
+<div align="left">
+    <img src="/screen_shot/Screen Shot 2018-12-10 at 8.33.40 AM.png" width="300px"</img> 	  
+    <img src="/screen_shot/Screen Shot 2018-12-10 at 8.35.20 AM.png" width="300px"</img> 
+</div>
+
+ 
+
  
  
 
