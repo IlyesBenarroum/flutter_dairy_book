@@ -6,6 +6,7 @@ class BottomNavigationHangAbove extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       home:  Scaffold(
+        appBar: AppBar(title: const Text('Tasks - Bottom App Bar')),
         bottomNavigationBar: new Stack(
           overflow: Overflow.visible,
           alignment: new FractionalOffset(.5, 1.0),
@@ -31,7 +32,7 @@ class BottomNavigationHangAbove extends StatelessWidget {
 
 
 //Second Example
-class BottomNavigationHangAbove extends StatelessWidget {
+class BottomNavigationHangAboveTwo extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
