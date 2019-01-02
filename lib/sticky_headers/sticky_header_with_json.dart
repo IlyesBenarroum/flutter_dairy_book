@@ -1,10 +1,20 @@
-// main.dart
+
+
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sticky_headers/sticky_headers.dart';
+
+/*Steps:
+
+1)load json and convert to data object
+2)group data object by date
+3)convert group data into views
+
+*/
 
 class Name {
   final String first;
@@ -116,6 +126,7 @@ List<CompanyViewInfo> _groupByDate(List<Company> companyList) {
         );
 
         final child = Text(list.map((c) => "${c.balance} - ${c.name.first}").join(" "));
+
 
         return CompanyViewInfo(header: header, child: child);
       },

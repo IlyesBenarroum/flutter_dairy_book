@@ -9,7 +9,7 @@
     "age": 22,
     "eyeColor": "green",
     "name": {
-      "first": "Maryellen",
+      "first": "Mir",
       "last": "Moody"
     },
     "company": "SURETECH",
@@ -25,15 +25,30 @@
     "age": 39,
     "eyeColor": "green",
     "name": {
-      "first": "Duffy",
+      "first": "Mahfuz",
       "last": "Knight"
     },
     "company": "CYCLONICA",
-    "registered": "Fri Jul 21 1995 09:54:11 GMT+0000 (UTC)"
+    "registered": "Fri Jul 22 1995 09:54:11 GMT+0000 (UTC)"
+  },  {
+    "_id": "5bbe598c325e76f346816167",
+    "index": 2,
+    "guid": "672ac480-f8fc-47e8-a960-bac230f11dab",
+    "isActive": true,
+    "balance": "$3,081.07",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "green",
+    "name": {
+      "first": "Mahfuz",
+      "last": "Knight"
+    },
+    "company": "CYCLONICA",
+    "registered": "Fri Jul 25 1995 09:54:11 GMT+0000 (UTC)"
   },
   {
     "_id": "5bbe598c0ce158b98ebafcf2",
-    "index": 2,
+    "index": 3,
     "guid": "4528d59a-2eb1-4726-ae4b-5cc8d9495d5e",
     "isActive": true,
     "balance": "$2,588.97",
@@ -41,7 +56,7 @@
     "age": 29,
     "eyeColor": "brown",
     "name": {
-      "first": "Traci",
+      "first": "Riyad",
       "last": "Grimes"
     },
     "company": "DOGNOST",
@@ -49,7 +64,7 @@
   },
   {
     "_id": "5bbe598cc666e2e9561ad82e",
-    "index": 3,
+    "index": 4,
     "guid": "085883af-3ad4-4779-ac4d-5c5374d81144",
     "isActive": true,
     "balance": "$3,928.99",
@@ -57,7 +72,7 @@
     "age": 26,
     "eyeColor": "brown",
     "name": {
-      "first": "Reyna",
+      "first": "Mir Mahfuz",
       "last": "Bond"
     },
     "company": "MOREGANIC",
