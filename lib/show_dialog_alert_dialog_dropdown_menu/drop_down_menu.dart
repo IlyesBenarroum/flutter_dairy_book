@@ -18,13 +18,105 @@ class DropdownMenu extends StatelessWidget {
                 );
               }).toList();
             },
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: InkWell(
+                onTap: () {
+                  _showAlertDialog(context);
+                },
+                child: new Icon(Icons.add_alert)),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: InkWell(
+                onTap: () {
+                  _showDialog(context);
+                },
+                child: new Icon(Icons.slideshow)),
+          ),
         ],
       ),
     );
   }
 
+// Alert Dialog function
+  void _showAlertDialog(context) {
+    // flutter defined function
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return alert dialog object
+        return AlertDialog(
+          title: new Text("Alert Dialog title"),
+          //content: new Text("Alert Dialog body"),
+          actions: <Widget>[
+            new FlatButton(
+              child: new Text("OK"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
 
+// Show Dialog function
+  void _showDialog(context) {
+    // flutter defined function
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return alert dialog object
+        return AlertDialog(
+          title: new Text('I am Title'),
+          content: Container(
+            height: 150.0,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                new Row(
+                  children: <Widget>[
+                    new Icon(Icons.toys),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: new Text(' First Item'),
+                    ),
+                  ],
+                ),
+                new SizedBox(
+                  height: 20.0,
+                ),
+                new Row(
+                  children: <Widget>[
+                    new Icon(Icons.toys),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: new Text(' Second Item'),
+                    ),
+                  ],
+                ),
+                new SizedBox(
+                  height: 20.0,
+                ),
+                new Row(
+                  children: <Widget>[
+                    new Icon(Icons.toys),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: new Text('Third Item'),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
 
   void choiceAction(String choice) {
     if (choice == Constants.FirstItem) {
@@ -36,7 +128,8 @@ class DropdownMenu extends StatelessWidget {
     }
   }
 }
-class Constants{
+
+class Constants {
   static const String FirstItem = 'First Item';
   static const String SecondItem = 'Second Item';
   static const String ThirdItem = 'Third Item';
@@ -46,8 +139,4 @@ class Constants{
     SecondItem,
     ThirdItem,
   ];
-
-
-
-
 }
