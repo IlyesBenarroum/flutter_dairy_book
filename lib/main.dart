@@ -8,6 +8,8 @@ import 'package:flutter_dairy_book/sticky_headers/sticky_header_with_json.dart';
 import 'package:flutter_dairy_book/sticky_headers/sticky_headers.dart';
 import 'package:flutter_dairy_book/warp_demo/warp_demo.dart';
 
+import 'flutter_ui/account_page.dart';
+
 //void main() => runApp(new BottomNavigationHangAbove());
 void main() => runApp(new MyApp());
 
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: new AppBarBottom(),
 //        home: DropdownMenu(),
-        home: ExpendableExample(),
+//        home: ExpendableExample(),
+        home: RegisterPage(),
 
     );
   }
