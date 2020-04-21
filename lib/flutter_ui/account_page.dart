@@ -65,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: "Kamushken@gmail.com",
+                    hintText: "mirmahfuz82@gmail.com",
                     border: OutlineInputBorder()),
               ),
             ),

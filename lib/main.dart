@@ -9,6 +9,7 @@ import 'package:flutter_dairy_book/sticky_headers/sticky_headers.dart';
 import 'package:flutter_dairy_book/warp_demo/warp_demo.dart';
 
 import 'flutter_ui/account_page.dart';
+import 'flutter_ui/grid_with_custom_height_width.dart';
 
 //void main() => runApp(new BottomNavigationHangAbove());
 void main() => runApp(new MyApp());
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
 //      home: new AppBarBottom(),
 //        home: DropdownMenu(),
 //        home: ExpendableExample(),
-        home: RegisterPage(),
+//        home: RegisterPage(),
+        home: GridWithCustomHeightWidth(),
 
     );
   }
